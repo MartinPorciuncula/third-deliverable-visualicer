@@ -40,12 +40,12 @@ function App() {
         <img src="/images/black-hole-ram.png" />
       </div>
       <section className="h-[400px] w-9/12 flex justify-center mb-6 -mt-6 relative min-[400px]:w-[280px]">
-        <section className={`absolute ${showCards === idCards.id1 ? 'top-0 opacity-1 ' : '-top-96 opacity-0 '}transition-all duration-1000`}>
+        <section className={`absolute ${showCards === idCards.id1 ? 'top-0 opacity-1 visible' : '-top-96 opacity-0 invisible'}transition-[opacity_visiblity] duration-1000`}>
           <CharactersCard image={"/images/porci.png"} name={'Martin Porciúncula'} country={'Uruguay'} url={idUrl.id1} />
         </section>
-        <section className={`absolute ${showCards === idCards.id2 ? 'top-0 opacity-1 ' : '-top-96 opacity-0 '}transition-all duration-1000`}>
+        <section className={`absolute ${showCards === idCards.id2 ? 'top-0 opacity-1 visible' : '-top-96 opacity-0 invisible'}transition-[opacity_visiblity] duration-1000`}>
           {<CharactersCard image={"/images/rick-morty-robot.png"} name={'Edwar León'} country={'Colombia'} url={idUrl.id2} />}</section>
-        <section className={`absolute ${showCards === idCards.id3 ? 'top-0 opacity-1 ' : '-top-96 opacity-0 '}transition-all duration-1000`}>
+        <section className={`absolute ${showCards === idCards.id3 ? 'top-0 opacity-1 visible' : '-top-96 opacity-0 invisible'}transition-[opacity_visiblity] duration-1000`}>
           {<CharactersCard image={"/images/tinckles-ram.png"} name={'Alan Polanco'} country={'Argentina'} url={idUrl.id3} />}</section>
       </section>
     </main >
